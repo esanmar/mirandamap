@@ -32,9 +32,9 @@ import { useMapStore } from './lib/state';
 import { MapController } from './lib/map-controller';
 
 const API_KEY = process.env.GEMINI_API_KEY as string;
-if (typeof API_KEY !== 'string') {
-  throw new Error(
-    'Missing required environment variable: GEMINI_API_KEY'
+if (typeof API_KEY !== 'string' || !API_KEY) {
+  console.error(
+    'Missing required environment variable: GEMINI_API_KEY. Please check your .env file or deployment configuration.'
   );
 }
 
