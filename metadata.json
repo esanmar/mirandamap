@@ -1,0 +1,7 @@
+{
+  "name": "Guía Miranda de Ebro Accesible",
+  "description": "Agente turístico para invidentes en Miranda de Ebro",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
